@@ -7,24 +7,24 @@ You can create simple or complex passwords ranging from 8 to 60 characters.
 
 ##### Uppercase characters [A-Z]
 
-  > #####VMRXHNVD
+  > ##### VMRXHNVD
 
 ##### Lovercase characters [a-z]
 
-  > #####isinwjhx
+  > ##### isinwjhx
 
 ##### Numeric characters [0-9]
 
-  > #####07801575
+  > ##### 07801575
 
 ##### Special characters [/*+&...]
 
-  > #####<':#&(|[
+  > ##### <':#&(|[
 
 ##### Extended Ascii
 
-  > #####õõíÖÿÊã²
+  > ##### õõíÖÿÊã²
 
 ##### All
 
- > #####CÍÐüdqQ²
+ > ##### CÍÐüdqQ²
