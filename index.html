@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generators</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  
+  <main>
+    <div class="container card">
+      <div class="container_button">
+        <button id="generator">Password Generator <i class="fab fa-keycdn"></i></button>
+      </div>
+    
+      <!-- Password length -->
+      <div class="container_slaider">
+        <input class="slider" type="range" name="range" id="password_length" value="8" min="8" max="60" oninput="this.nextElementSibling.value = this.value">
+        <output>8</output>
+      </div>
+      
+      <div class="container_checkbox">
+        <!-- Uppercase characters -->
+        <div class="container_checkbox_row">
+          <label for="upper_char">Uppercase characters <span>[A-Z]</span></label>
+          <input type="checkbox" name="upper_char" id="upper_char">
+        </div>
+        <!-- Lovercase characters -->
+        <div class="container_checkbox_row">
+          <label for="lover_char">Lovercase characters <span>[a-z]</span></label>
+          <input type="checkbox" name="lover_char" id="lover_char">
+        </div>
+        <!-- Numeric characters -->
+        <div class="container_checkbox_row">
+          <label for="numeric_char">Numeric characters <span>[0-9]</span></label>
+          <input type="checkbox" name="numeric_char" id="numeric_char">
+        </div>
+        <!-- Special characters -->
+        <div class="container_checkbox_row">
+          <label for="special_char">Special characters <span>[/*+&...]</span></label>
+          <input type="checkbox" name="special_char" id="special_char">
+        </div>
+        <!-- Extended Ascii -->
+        <div class="container_checkbox_row">
+          <label for="extended_ascii">Extended Ascii</label>
+          <input type="checkbox" name="extended_ascii" id="extended_ascii">
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Password -->
+    <div class="container_password card">
+      <h5 id='pwd_txt'></h5>
+      <button class='clipboard' id='clipboard'><i class="fas fa-clipboard"></i></button>
+    </div>
+    
+  </main>  
+  
+  <footer class="main">
+    <div class="social">
+      <a href="https://" target="_blank" title=""><i class="fab fa-github"></i></a>
+      <a href="https://" target="_blank" title="source"><i class="fas fa-code"></i></i></a>
+      
+    </div>
+    <p>
+      Copyrigth ©2021
+    </p>
+  </footer>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

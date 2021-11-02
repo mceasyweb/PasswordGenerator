@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #A09F57;
+  color: #f78604;
+  font-size: 2rem;
+}
+
+main {
+  min-height: calc(100vh - 85px);
+  
+}
+
+.card {
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.container, .container_password {
+  max-width: 600px;
+  min-width: 370px;
+  margin: 0 auto;
+  background-color: #EADEB8;
+  border-radius: 15px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+#generator {
+  background: #000;
+  border: 0;
+  color: #f78604;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 15px;
+  font-family: fantasy;
+  font-size: 2rem;
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: opacity .3s;
+}
+
+#generator:hover {
+  opacity: .5;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 10px;
+  background-color: #f78604;
+  border-radius: 15px;
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: opacity .3s;
+  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.slider:hover {
+  opacity: 0.5;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+}
+
+output {
+  margin-left: 10px;
+}
+
+.container_checkbox {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.container_checkbox_row {
+  display: flex;
+  padding: 5px;
+}
+
+.container_checkbox_row label {
+  flex-basis: 80%;
+}
+
+.container_checkbox_row input {
+  flex-basis: 20%;
+}
+
+.container_password {
+  display: flex;
+  height: 60px;
+  margin-top: 5%;
+  border-radius: 15px;
+  font-family: serif;
+}
+
+.container_password h5 {
+  padding: 0 5px;
+  margin: auto;
+  word-break: break-all;
+}
+
+.clipboard {
+  min-width: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #000;
+  color: #f78604;
+  border-radius: 15px;
+  font-size: 2.3rem;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+.clipboard:hover {
+  opacity: .5;
+}
+
+footer.main, footer.main a {
+  color: #000;
+}
+footer.main {
+  text-align: center;
+  margin: 0;
+}
+
+footer.main a {
+  font-size: 4rem;
+  margin: 0 10px;
+}
+
+footer.main p {
+  font-size: 1rem;
+}
