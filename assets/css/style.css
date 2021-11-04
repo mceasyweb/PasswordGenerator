@@ -13,8 +13,8 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 85px);
-  
+  min-height: calc(100vh - 90px);
+  padding-top: 20px;
 }
 
 .card {
@@ -53,8 +53,14 @@ main {
   opacity: .5;
 }
 
+.container_slaider {
+  justify-content: space-between;
+}
+
 .slider {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 70%;
   height: 10px;
   background-color: #f78604;
@@ -64,7 +70,10 @@ main {
   transition: opacity .3s;
   margin-left: 40px;
   margin-top: 25px;
-  margin-bottom: 20px;
+}
+
+.slider div {
+  flex-basis: 50%;
 }
 
 .slider:hover {
@@ -73,6 +82,7 @@ main {
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -80,8 +90,17 @@ main {
   cursor: pointer;
 }
 
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  background: #000;
+  border: none;
+}
+
 output {
+  display: inline-block;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .container_checkbox {
