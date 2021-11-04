@@ -123,7 +123,7 @@ output {
 
 .container_password {
   display: flex;
-  height: 60px;
+  height: 80px;
   margin-top: 5%;
   border-radius: 15px;
   font-family: serif;
